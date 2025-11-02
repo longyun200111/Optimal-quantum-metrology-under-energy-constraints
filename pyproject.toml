@@ -1,0 +1,23 @@
+[project]
+name = "energy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cvxpy>=1.6.3",
+    "ipykernel>=6.29.5",
+    "joblib>=1.5.2",
+    "matplotlib>=3.10.1",
+    "mosek>=11.0.28",
+    "pandas>=2.2.3",
+    "psutil>=7.0.0",
+    "qutip>=5.1.1",
+    "sympy>=1.13.1",
+    "torch>=2.6.0",
+    "torchvision>=0.21.0",
+    "tqdm>=4.67.1",
+]
+
+[tool.uv.workspace]
+members = ["server"]
