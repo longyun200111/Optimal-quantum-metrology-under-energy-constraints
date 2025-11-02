@@ -188,7 +188,7 @@ def calc_van_trees(T, sigma=1, mu=np.pi):
 
 def solve_accurate():
     p_val = np.linspace(1e-5, 1 - 1e-5, 15).tolist()
-    E_val = np.linspace(1e-5, 1, 10).tolist()
+    E_val = sorted(np.linspace(1e-5, 1, 10).tolist() + np.linspace(1e-5, 0.2, 10).tolist())
     
     res_accurate = []
 
